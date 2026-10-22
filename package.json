@@ -1,0 +1,30 @@
+{
+  "name": "@joshmouch/ai-fleet-snapshot-nats-ts",
+  "version": "0.1.0",
+  "description": "NATS JetStream KV adapter for the VersionedSnapshots port (Conflux Durable Authority Storage snapshot-store)",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "test": "node --import tsx --test test/"
+  },
+  "repository": "github:joshmouch/ai-fleet-snapshot-nats-ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@joshmouch/ai-fleet-snapshot-contracts-ts": "github:joshmouch/ai-fleet-snapshot-contracts-ts#771d162",
+    "@nats-io/kv": "3.4.0",
+    "@nats-io/transport-node": "3.4.0"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15"
+  }
+}
